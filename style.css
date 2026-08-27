@@ -4858,3 +4858,422 @@ html[data-theme="dark"] .education-meta span {
 .title-kulkarni {
     white-space:nowrap;
 }
+
+/* =========================================================
+   MOBILE — FINAL CLEAN VERSION
+   ========================================================= */
+
+@media (max-width:700px) {
+
+    /* ---------- GENERAL ---------- */
+
+    .cursor-dot,
+    .cursor-outline {
+        display:none;
+    }
+
+    /* ---------- NAVIGATION ---------- */
+
+    .floating-nav {
+        top:15px;
+        width:calc(100% - 30px);
+        height:58px;
+        padding:0 10px 0 14px;
+    }
+
+    .nav-links {
+        display:flex;
+        gap:2px;
+        order:1;
+    }
+
+    .nav-link {
+        padding:7px 8px;
+        font-size:.55rem;
+    }
+
+    .nav-proverb {
+        display:none;
+    }
+
+    .nav-actions {
+        gap:5px;
+        order:2;
+    }
+
+    .theme-toggle,
+    .menu-toggle {
+        width:42px;
+        height:42px;
+    }
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        min-height:auto;
+        padding:95px 6vw 55px;
+    }
+
+    .hero-inner {
+        display:flex;
+        flex-direction:column;
+        gap:0;
+    }
+
+    /* ---------- PORTRAIT ---------- */
+
+    .hero-visual {
+        width:100%;
+        height:auto;
+        min-height:0;
+        margin:0;
+        padding:0;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        order:1;
+    }
+
+    .portrait-frame {
+        width:100%;
+        height:auto;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        transform:none;
+    }
+
+    .portrait {
+        width:100%;
+        max-width:390px;
+        max-height:none;
+        height:auto;
+        margin:0 auto;
+    }
+
+    .portrait-orbit.orbit-one {
+        width:360px;
+        height:360px;
+        left:50%;
+        top:50%;
+        transform:translate(-50%,-50%);
+    }
+
+    .portrait-orbit.orbit-two {
+        width:450px;
+        height:450px;
+        left:50%;
+        top:50%;
+        transform:translate(-50%,-50%);
+    }
+
+    .portrait-dots {
+        left:5%;
+        top:25%;
+        transform:scale(.7);
+    }
+
+    .portrait-marker {
+        left:4%;
+        bottom:12%;
+    }
+
+    .portrait-label {
+        left:7%;
+        bottom:5%;
+        font-size:.45rem;
+    }
+
+    .portrait-base-line {
+        display:none;
+    }
+
+    /* ---------- HERO CONTENT ---------- */
+
+    .hero-content {
+        width:100%;
+        order:2;
+        margin-top:5px;
+    }
+
+    .hero-eyebrow {
+        font-size:.62rem;
+        margin:0 0 18px 0;
+    }
+
+    /* BIGGER NAME */
+
+    .hero-title {
+        font-size:clamp(4.8rem,18vw,7rem);
+        line-height:.78;
+        letter-spacing:-.095em;
+        margin:0 0 25px;
+    }
+
+    .title-sujay,
+    .title-kulkarni {
+        line-height:.78;
+    }
+
+    /* REMOVE MACHINE LEARNING / DATA SCIENCE /
+       ARTIFICIAL INTELLIGENCE META */
+
+    .hero-meta {
+        display:none;
+    }
+
+    /* DESCRIPTION */
+
+    .hero-description {
+        max-width:100%;
+        margin:0 0 25px 0;
+    }
+
+    .hero-description p {
+        font-size:1.05rem;
+        line-height:1.5;
+    }
+
+    /* SMALLER GITHUB + LINKEDIN */
+
+    .hero-actions {
+        margin:0 0 30px 0;
+        gap:7px;
+        flex-wrap:nowrap;
+    }
+
+    .social-button {
+        padding:7px 9px;
+        gap:7px;
+        font-size:.55rem;
+    }
+
+    .social-icon {
+        width:23px;
+        height:23px;
+        font-size:.45rem;
+    }
+
+    .social-arrow {
+        font-size:.7rem;
+    }
+
+    /* ---------- HIDE DESKTOP SCROLL ELEMENTS ---------- */
+
+    .scroll-indicator {
+        display:none;
+    }
+
+    .hero-bottom-text {
+        display:none;
+    }
+
+    /* ---------- ABOUT ---------- */
+
+    .statement-section {
+        min-height:auto;
+        padding:80px 6vw;
+        display:block;
+    }
+
+    .statement-title {
+        font-size:clamp(3.5rem,15vw,6rem);
+        margin-bottom:40px;
+    }
+
+    .about-description {
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    /* ---------- PROJECTS ---------- */
+
+    .projects-section {
+        padding:90px 6vw;
+    }
+
+    .section-heading {
+        margin-bottom:55px;
+        display:block;
+    }
+
+    .section-heading h2 {
+        font-size:clamp(3.5rem,15vw,6rem);
+    }
+
+    .section-heading > p {
+        width:auto;
+        margin-top:25px;
+        font-size:1rem;
+    }
+
+    .project-card {
+        padding:45px 6vw;
+    }
+
+    .project-info h3 {
+        font-size:clamp(2.4rem,11vw,4rem);
+    }
+
+    /* ---------- ARSENAL ---------- */
+
+    .arsenal-section {
+        padding:90px 6vw;
+    }
+
+    .arsenal-header h2 {
+        font-size:clamp(3.5rem,15vw,6rem);
+    }
+
+    .arsenal-grid {
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+
+    .arsenal-cards {
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .arsenal-card {
+        min-height:125px;
+    }
+
+    /* ---------- RESUME ---------- */
+
+    .resume-section {
+        min-height:auto;
+        padding:90px 6vw;
+    }
+
+    .resume-header {
+        margin-bottom:50px;
+    }
+
+    .resume-header h2 {
+        font-size:clamp(3.5rem,15vw,6rem);
+    }
+
+    .resume-editorial-card {
+        grid-template-columns:1fr;
+        min-height:auto;
+        box-shadow:7px 7px 0 var(--terracotta);
+    }
+
+    .resume-card-left {
+        min-height:150px;
+        border-right:none;
+        border-bottom:2px solid var(--border);
+    }
+
+    .resume-card-right {
+        padding:30px 25px;
+    }
+
+    .resume-name {
+        font-size:clamp(3.5rem,15vw,6rem);
+        margin:35px 0 20px;
+    }
+
+    .resume-card-bottom {
+        flex-direction:column;
+        align-items:flex-start;
+        gap:25px;
+    }
+
+    .resume-actions {
+        width:100%;
+        flex-direction:column;
+    }
+
+    .resume-btn {
+        width:100%;
+    }
+
+    /* ---------- CONTACT ---------- */
+
+    .contact-section {
+        min-height:auto;
+        padding:80px 6vw 35px;
+    }
+
+    .contact-main {
+        margin:55px auto;
+    }
+
+    .contact-main h2 {
+        font-size:clamp(4rem,18vw,7rem);
+        line-height:.8;
+        margin-bottom:50px;
+    }
+
+    .contact-grid {
+        grid-template-columns:1fr;
+        gap:15px;
+    }
+
+    .contact-card {
+        min-height:85px;
+        padding:15px;
+    }
+
+    .contact-card-icon {
+        width:40px;
+        height:40px;
+    }
+
+    .contact-card-content strong {
+        font-size:.85rem;
+    }
+
+    .contact-message {
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
+    }
+
+    .contact-message-button {
+        width:100%;
+        justify-content:center;
+    }
+
+    .contact-section .contact-bottom {
+        margin-top:50px;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:12px;
+    }
+
+    /* ---------- FOOTER ---------- */
+
+    .site-footer {
+        grid-template-columns:1fr;
+        gap:20px;
+        text-align:center;
+    }
+
+    .footer-links {
+        justify-content:center;
+    }
+
+    .footer-credit {
+        text-align:center;
+    }
+
+    /* ---------- DASHBOARD ---------- */
+
+    .dashboard-button {
+        right:18px;
+        bottom:18px;
+        width:52px;
+        height:52px;
+    }
+
+    .dashboard-button:hover {
+        width:52px;
+        border-radius:50%;
+    }
+
+    .dashboard-button:hover .dashboard-text {
+        display:none;
+    }
+}
