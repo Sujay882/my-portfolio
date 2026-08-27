@@ -4802,3 +4802,734 @@ html[data-theme="dark"] .education-meta span {
     text-align: center;
     white-space: nowrap;
 }
+/* ============================================================
+   FINAL MOBILE RESPONSIVE FIX
+   ============================================================ */
+
+@media (max-width: 700px) {
+
+    /* --------------------------------------------------------
+       GLOBAL MOBILE SAFETY
+       -------------------------------------------------------- */
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    section {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* --------------------------------------------------------
+       NAVIGATION
+       -------------------------------------------------------- */
+
+    .floating-nav {
+        width: calc(100% - 24px);
+        height: 56px;
+        top: 12px;
+        padding: 0 12px 0 18px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+
+    .theme-toggle,
+    .menu-toggle {
+        width: 38px;
+        height: 38px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-proverb {
+        display: none;
+    }
+
+
+    /* --------------------------------------------------------
+       HERO
+       -------------------------------------------------------- */
+
+    .hero {
+        min-height: auto;
+        padding: 105px 6vw 65px;
+    }
+
+    .hero-inner {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+    }
+
+    .hero-visual {
+        width: 100%;
+        height: 43vh;
+        min-height: 300px;
+        max-height: 430px;
+    }
+
+    .portrait-frame {
+        width: 90%;
+    }
+
+    .portrait {
+        width: 82%;
+        max-height: 100%;
+    }
+
+    .orbit-one {
+        width: 320px !important;
+        height: 320px !important;
+        left: 50% !important;
+        top: 8% !important;
+        transform: translateX(-50%);
+    }
+
+    .orbit-two {
+        width: 390px !important;
+        height: 390px !important;
+        left: 50% !important;
+        top: 0 !important;
+        transform: translateX(-50%);
+    }
+
+    .portrait-dots {
+        left: 0;
+        top: 20%;
+        transform: scale(.65);
+    }
+
+    .portrait-marker {
+        left: 0;
+        bottom: 17%;
+        font-size: .48rem;
+    }
+
+    .portrait-label {
+        left: 5%;
+        bottom: 5%;
+        font-size: .45rem;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-eyebrow {
+        font-size: .58rem;
+        margin-bottom: 20px;
+        gap: 8px;
+    }
+
+    .eyebrow-line {
+        width: 25px;
+    }
+
+    .hero-title {
+        width: 100%;
+        max-width: 100%;
+        font-size: clamp(3rem, 14vw, 5.5rem);
+        line-height: .82;
+        letter-spacing: -.085em;
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    .title-line {
+        white-space: nowrap;
+        font-size: inherit;
+    }
+
+    .hero-description {
+        max-width: 100%;
+        margin-left: 0;
+        margin-bottom: 25px;
+    }
+
+    .hero-description p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .hero-actions {
+        margin-left: 0;
+        margin-bottom: 30px;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .social-button {
+        padding: 9px 12px;
+        gap: 9px;
+        font-size: .58rem;
+    }
+
+    .social-icon {
+        width: 26px;
+        height: 26px;
+    }
+
+    .hero-meta {
+        margin-left: 0;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .meta-text {
+        font-size: .55rem;
+    }
+
+    .hero-bottom-text {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin-top: 35px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        font-size: .5rem;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+
+
+    /* --------------------------------------------------------
+       ABOUT + EDUCATION
+       -------------------------------------------------------- */
+
+    .about-education-section {
+        width: 100%;
+        padding: 80px 6vw;
+    }
+
+    .about-education-wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .about-education-panel {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-column,
+    .education-column {
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        top: 0 !important;
+    }
+
+    .about-column {
+        padding: 0 0 60px;
+    }
+
+    .education-column {
+        padding: 60px 0 0;
+        border-left: none !important;
+        border-top: 1px solid var(--border);
+    }
+
+    .about-education-title {
+        font-size: clamp(3rem, 14vw, 5rem);
+        line-height: .9;
+        letter-spacing: -.07em;
+        margin-bottom: 35px;
+        white-space: nowrap;
+    }
+
+    .education-title {
+        padding-bottom: 20px !important;
+        margin-bottom: 30px !important;
+        border-bottom: 1px solid var(--border) !important;
+    }
+
+    .about-description {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr !important;
+        gap: 25px;
+        padding-top: 25px;
+    }
+
+    .about-description p {
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+
+    .education-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .education-date {
+        font-size: .65rem;
+        margin-bottom: 18px;
+    }
+
+    .education-content h3,
+    .education-column h3 {
+        font-size: clamp(1.7rem, 7vw, 2.5rem);
+        line-height: 1.05;
+        letter-spacing: -.04em;
+        margin-bottom: 20px;
+    }
+
+    .education-place {
+        font-size: .95rem;
+        line-height: 1.5;
+    }
+
+    .education-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 25px;
+    }
+
+    .education-meta span {
+        font-size: .55rem;
+        padding: 9px 11px;
+    }
+
+
+    /* --------------------------------------------------------
+       OLD ABOUT SECTION FALLBACK
+       -------------------------------------------------------- */
+
+    .statement-section {
+        min-height: auto;
+        padding: 85px 6vw;
+        display: block;
+    }
+
+    .statement-title {
+        font-size: clamp(3rem, 14vw, 5.5rem);
+        line-height: .9;
+        margin-bottom: 40px;
+    }
+
+    .statement-title em {
+        display: inline;
+    }
+
+
+    /* --------------------------------------------------------
+       PROJECTS
+       -------------------------------------------------------- */
+
+    .projects-section {
+        padding: 90px 6vw;
+    }
+
+    .section-heading {
+        display: block;
+        margin-bottom: 55px;
+    }
+
+    .section-heading h2 {
+        font-size: clamp(3.2rem, 15vw, 6rem);
+        line-height: .88;
+        margin-top: 15px;
+    }
+
+    .section-heading > p {
+        width: 100%;
+        max-width: 340px;
+        margin-top: 25px;
+        font-size: .95rem;
+        line-height: 1.55;
+    }
+
+    .project-card {
+        padding: 50px 6vw;
+    }
+
+    .project-info {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .project-category {
+        font-size: .58rem;
+        margin-bottom: 18px;
+    }
+
+    .project-info h3 {
+        font-size: clamp(2rem, 10vw, 4rem);
+        line-height: .95;
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .project-info p {
+        max-width: 100%;
+        font-size: .95rem;
+        line-height: 1.65;
+        margin-bottom: 25px;
+    }
+
+    .project-tags {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .project-tags span {
+        font-size: .52rem;
+        padding: 7px 10px;
+    }
+
+    .project-link {
+        margin-top: 30px;
+        font-size: .58rem;
+    }
+
+
+    /* --------------------------------------------------------
+       TECHNICAL ARSENAL
+       -------------------------------------------------------- */
+
+    .arsenal-section {
+        width: 100%;
+        padding: 90px 6vw;
+    }
+
+    .arsenal-header {
+        margin-bottom: 45px;
+    }
+
+    .arsenal-header h2 {
+        font-size: clamp(3rem, 14vw, 5.5rem);
+        line-height: .9;
+        margin: 15px 0;
+    }
+
+    /* MARQUEE */
+
+    .tech-marquee {
+        width: 100vw;
+        margin-left: -6vw;
+        margin-bottom: 55px;
+        padding: 12px 0;
+    }
+
+    .tech-marquee-group {
+        gap: 8px;
+        padding-right: 8px;
+    }
+
+    .tech-marquee-track span {
+        padding: 9px 13px;
+        font-size: .52rem;
+    }
+
+    /* Arsenal categories */
+
+    .arsenal-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+    .arsenal-category-title {
+        font-size: .95rem;
+        margin-bottom: 18px;
+    }
+
+    .arsenal-category-title > span {
+        width: 4px;
+        height: 20px;
+    }
+
+    .arsenal-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .arsenal-card {
+        min-height: 125px;
+        gap: 10px;
+    }
+
+    .arsenal-icon {
+        width: 36px;
+        height: 36px;
+        font-size: .75rem;
+    }
+
+    .arsenal-card h3 {
+        font-size: .62rem;
+    }
+
+
+    /* --------------------------------------------------------
+       RESUME
+       -------------------------------------------------------- */
+
+    .resume-section {
+        min-height: auto;
+        padding: 90px 6vw;
+    }
+
+    .resume-header {
+        margin-bottom: 50px;
+    }
+
+    .resume-header h2 {
+        font-size: clamp(3.2rem, 15vw, 6rem);
+        line-height: .88;
+    }
+
+    .resume-editorial-card {
+        width: 100%;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 6px 6px 0 var(--terracotta);
+    }
+
+    .resume-card-left {
+        min-height: 130px;
+        padding: 25px 22px;
+        border-right: none;
+        border-bottom: 2px solid var(--border);
+    }
+
+    .resume-card-right {
+        padding: 30px 22px;
+    }
+
+    .resume-top-meta {
+        font-size: .55rem;
+        padding-bottom: 15px;
+    }
+
+    .resume-name {
+        font-size: clamp(3.2rem, 15vw, 6rem);
+        line-height: .8;
+        margin: 35px 0 20px;
+    }
+
+    .resume-role {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .resume-description {
+        font-size: .88rem;
+        line-height: 1.7;
+        padding-left: 14px;
+    }
+
+    .resume-card-bottom {
+        margin-top: 35px;
+        padding-top: 25px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .resume-actions {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .resume-btn {
+        width: 100%;
+        height: 48px;
+    }
+
+
+    /* --------------------------------------------------------
+       CONTACT
+       -------------------------------------------------------- */
+
+    .contact-section {
+        min-height: auto;
+        padding: 90px 6vw 35px;
+    }
+
+    .contact-heading {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .contact-heading-top {
+        font-size: .5rem;
+    }
+
+    .contact-status {
+        font-size: .5rem;
+    }
+
+    .contact-heading h2 {
+        font-size: clamp(3.5rem, 17vw, 6.5rem);
+        line-height: .82;
+        margin-top: 45px;
+    }
+
+    .contact-intro {
+        max-width: 100%;
+        margin-top: 25px;
+        font-size: .95rem;
+        line-height: 1.55;
+    }
+
+    .contact-grid {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .contact-card {
+        width: 100%;
+        min-height: 85px;
+        padding: 14px;
+        gap: 12px;
+    }
+
+    .contact-card-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact-card-content {
+        min-width: 0;
+        max-width: calc(100% - 70px);
+    }
+
+    .contact-card-content strong {
+        font-size: .82rem;
+        overflow-wrap: anywhere;
+    }
+
+    .contact-card-arrow {
+        font-size: 1rem;
+    }
+
+    .contact-message {
+        width: 100%;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .contact-message-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contact-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 45px;
+    }
+
+
+    /* --------------------------------------------------------
+       DASHBOARD / BACK TO TOP
+       -------------------------------------------------------- */
+
+    .dashboard-button {
+        right: 15px;
+        bottom: 15px;
+        width: 48px;
+        height: 48px;
+    }
+
+    .dashboard-button:hover {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+    }
+
+    .dashboard-button:hover .dashboard-text {
+        display: none;
+    }
+
+
+    /* --------------------------------------------------------
+       FOOTER
+       -------------------------------------------------------- */
+
+    .site-footer {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 30px 6vw;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .footer-credit {
+        text-align: center;
+    }
+}
+
+
+/* ============================================================
+   EXTRA SMALL PHONES
+   ============================================================ */
+
+@media (max-width: 420px) {
+
+    .hero-title {
+        font-size: clamp(2.7rem, 13.5vw, 4.5rem);
+    }
+
+    .about-education-title,
+    .statement-title {
+        font-size: clamp(2.7rem, 13vw, 4.5rem);
+    }
+
+    .arsenal-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .arsenal-card {
+        min-height: 115px;
+    }
+
+    .arsenal-card h3 {
+        font-size: .58rem;
+    }
+
+    .resume-name {
+        font-size: clamp(2.8rem, 14vw, 5rem);
+    }
+
+    .contact-heading h2 {
+        font-size: clamp(3.2rem, 16vw, 5.5rem);
+    }
+
+    .social-button {
+        flex: 1;
+    }
+}
