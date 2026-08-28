@@ -5277,3 +5277,28 @@ html[data-theme="dark"] .education-meta span {
         display:none;
     }
 }
+
+/* =========================================================
+   REMOVE UNWANTED MOBILE MENU + BROWN DECORATIVE ICON
+   ========================================================= */
+
+/* Remove hamburger / mobile navigation button */
+.menu-toggle,
+.mobile-menu-toggle,
+.nav-toggle,
+.hamburger,
+#menuToggle,
+#mobileMenuToggle {
+    display: none !important;
+}
+
+/* Remove the small brown decorative/cursor element */
+.cursor,
+.custom-cursor,
+.cursor-dot,
+.cursor-follower,
+.cursor-circle,
+.cursor-trail,
+.mouse-follower {
+    display: none !important;
+}
