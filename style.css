@@ -5302,3 +5302,13 @@ html[data-theme="dark"] .education-meta span {
 .mouse-follower {
     display: none !important;
 }
+
+/* Hide hamburger menu button */
+.menu-toggle {
+    display: none !important;
+}
+
+/* Keep navigation links visible */
+.nav-links {
+    display: flex !important;
+}
