@@ -5312,3 +5312,20 @@ html[data-theme="dark"] .education-meta span {
 .nav-links {
     display: flex !important;
 }
+/* Mobile quote */
+.mobile-proverb {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .mobile-proverb {
+        display: block;
+        text-align: center;
+        margin: 25px 20px 35px;
+        font-size: 14px;
+        line-height: 1.6;
+        letter-spacing: 1px;
+    }
+
+}
